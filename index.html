@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Dr. Wolf's Cyber Experiment</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="js/1.12.4/jquery.min.js"></script>
+  <script src="js/1.12.4/jquery-ui.js"></script>
+  
+
+<link rel=stylesheet href=lib/codemirror.css>
+<script src=lib/codemirror.js></script>
+<script src=lib/xml.js></script>
+<script src=lib/javascript.js></script>
+<script src=lib/css.js></script>
+<script src=lib/closetag.js></script>
+<script src=js/custom.js></script>
+
+<style type="text/css">
+  .CodeMirror {
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<div class="panel-primary header">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      <button id="runButton" type="button" class="btn btn-default" onclick="submitTryit()">Run</button>
+    </h3>
+  </div>
+</div>
+
+   <div id="mainContent" class="mainContent">
+     <div id="mainContentHolder">
+      <div id="draggable"></div>
+      <div class="main-left">
+        <div class="left-inner-content">
+          <div class="left-inner-main">
+              <textarea id=editor name=editor>
+<!doctype html>
+<html>
+  <head>
+    <meta charset=utf-8>
+    <title>CodeMirror demo</title>
+    <style>p {font-family: monospace;}</style>
+  </head>
+  <body>
+    <p>On the left the user will type/edit code</p>
+    <p>On the right the result of the code will appear</p>
+  </body>
+</html></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="main-right">
+        <div class="right-inner-content">
+          <div class="right-inner-main">
+            <div id="iframewrapper"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+<script>
+    // Initialize CodeMirror editor with a nice html5 canvas demo.
+      var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+        mode: 'text/html',
+        autoCloseTags: true
+      });
+      submitTryit();
+    </script>
+
+</body>
+</html>
