@@ -28,30 +28,35 @@
 <div class="panel-primary header">
   <div class="panel-heading">
     <h3 class="panel-title">
-      <button id="runButton" type="button" class="btn btn-default" onclick="submitTryit()">Run</button>
+      <button id="runButton" type="button" class="btn btn-default" onclick="executeCode()">Execute Code</button>
     </h3>
   </div>
 </div>
 
    <div id="mainContent" class="mainContent">
      <div id="mainContentHolder">
-      <div id="draggable"></div>
       <div class="main-left">
         <div class="left-inner-content">
           <div class="left-inner-main">
-              <textarea id=editor name=editor>
-<!doctype html>
-<html>
-  <head>
-    <meta charset=utf-8>
-    <title>CodeMirror demo</title>
-    <style>p {font-family: monospace;}</style>
-  </head>
-  <body>
-    <p>On the left the user will type/edit code</p>
-    <p>On the right the result of the code will appear</p>
-  </body>
-</html></textarea>
+              <textarea id=editor name=editor><script>
+function startLevel(map) {
+  map.placePlayer(7, 5);
+
+  // EDITABLE BEGINS            
+  for (y = 3; y <= map.getHeight() - 10; y++) {
+    map.placeObject(5, y, 'block');
+    map.placeObject(map.getWidth() - 5, y, 'block');
+  }
+                 
+  for (x = 5; x <= map.getWidth() - 5; x++) {
+    map.placeObject(x, 3, 'block');
+    map.placeObject(x, map.getHeight() - 10, 'block');
+  }
+  // EDITABLE ENDS
+
+  map.placeObject(map.getWidth()-7, map.getHeight()-5, 'exit');
+}
+</script></textarea>
           </div>
         </div>
       </div>
@@ -65,13 +70,27 @@
     </div>
    </div>
 <script>
-    // Initialize CodeMirror editor with a nice html5 canvas demo.
-      var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-        mode: 'text/html',
-        autoCloseTags: true
-      });
-      submitTryit();
-    </script>
+var lowEnd = 0;
+var highEnd = 4;
+var readOnlyLines = [14, 15, 16, 17, 18];
+while(lowEnd <= highEnd){
+   readOnlyLines.push(lowEnd++);
+}
+
+// Initialize CodeMirror editor with a nice html5 canvas demo.
+var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+  lineNumbers: true,
+  mode: 'text/javascript',
+  autoCloseTags: true
+});
+
+editor.on('beforeChange', function(cm, change) {
+  if( ~readOnlyLines.indexOf(change.from.line) ) {
+    change.cancel();
+  }
+});
+executeCode();
+</script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-    function submitTryit(){
+    function executeCode(){
         var text = editor.getValue();
         var ifr = document.createElement("iframe");
         ifr.setAttribute("frameborder", "0");
