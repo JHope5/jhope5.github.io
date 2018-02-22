@@ -38,25 +38,7 @@
       <div class="main-left">
         <div class="left-inner-content">
           <div class="left-inner-main">
-              <textarea id=editor name=editor><script>
-// These 2 lines are
-// not editable
-
-  // EDITABLE BEGINS            
-  for (y = 3; y <= map.getHeight() - 10; y++) {
-    map.placeObject(5, y, 'block');
-    map.placeObject(map.getWidth() - 5, y, 'block');
-  }
-                 
-  for (x = 5; x <= map.getWidth() - 5; x++) {
-    map.placeObject(x, 3, 'block');
-    map.placeObject(x, map.getHeight() - 10, 'block');
-  }
-  // EDITABLE ENDS
-
-  // Neither are
-  // These 2
-</script></textarea>
+              <textarea id=editor name=editor></textarea>
           </div>
         </div>
       </div>
@@ -70,26 +52,31 @@
     </div>
    </div>
 <script>
-var lowEnd = 0;
-var highEnd = 4;
-var readOnlyLines = [14, 15, 16, 17, 18];
-while(lowEnd <= highEnd){
-   readOnlyLines.push(lowEnd++);
-}
 
-// Initialize CodeMirror editor with a nice html5 canvas demo.
-var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-  lineNumbers: true,
-  mode: 'text/html',
-  autoCloseTags: true
-});
+// Initialize CodeMirror editor
+$(function(){
+    $.get('example.html',  function(data){
+        $('textarea#editor').val(data);
+        // now init codemirror
+        var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
+            mode: 'text/html',
+            tabMode: 'indent',
+            lineNumbers: true,
+            lineWrapping: true,
+            autoCloseTags: true
+        });
+    })
+})
+executeCode();
 
 editor.on('beforeChange', function(cm, change) {
   if( ~readOnlyLines.indexOf(change.from.line) ) {
     change.cancel();
   }
 });
-executeCode();
+
+var file = "js/custom.js";
+var fileToEdit = reader.readAsText(file);
 </script>
 
 </body>
