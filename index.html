@@ -65,18 +65,9 @@ $(function(){
             lineWrapping: true,
             autoCloseTags: true
         });
+        executeCode(editor);
     })
 })
-executeCode();
-
-editor.on('beforeChange', function(cm, change) {
-  if( ~readOnlyLines.indexOf(change.from.line) ) {
-    change.cancel();
-  }
-});
-
-var file = "js/custom.js";
-var fileToEdit = reader.readAsText(file);
 </script>
 
 </body>
