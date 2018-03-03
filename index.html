@@ -52,22 +52,37 @@
     </div>
    </div>
 <script>
+// Initializing CodeMirror editor
+var textArea = document.getElementById('editor');
+var editor = CodeMirror.fromTextArea(textArea, {
+  mode: 'text/html',
+  tabMode: 'indent',
+  lineNumbers: true,
+  lineWrapping: true,
+  autoCloseTags: true
+});
 
-// Initialize CodeMirror editor
-$(function(){
-    $.get('example.html',  function(data){
-        $('textarea#editor').val(data);
-        // now init codemirror
-        var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-            mode: 'text/html',
-            tabMode: 'indent',
-            lineNumbers: true,
-            lineWrapping: true,
-            autoCloseTags: true
-        });
-        executeCode(editor);
-    })
-})
+function get_file(url, callback)
+{
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp.open("GET", url, true);
+    xmlhttp.onreadystatechange = function()
+    {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+        {
+            callback(xmlhttp.responseText);
+        }
+    }
+    xmlhttp.send();
+}
+
+get_file("example.html", function(response)
+{
+    document.getElementById('editor').innerHTML=response;
+    // Loading file into CodeMirror editor
+    editor.getDoc().setValue(response);
+    loadEditor(editor);
+});
 </script>
 
 </body>

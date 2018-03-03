@@ -1,4 +1,4 @@
-    function executeCode(editor){
+    function loadEditor(editor){
         var text = editor.getValue();
         var ifr = document.createElement("iframe");
         ifr.setAttribute("frameborder", "0");
@@ -9,6 +9,19 @@
         ifrw.document.open();
         ifrw.document.write(text);
         ifrw.document.close();
+    };
+
+    function executeCode() {
+      var text = editor.getValue();
+      var ifr = document.createElement("iframe");
+      ifr.setAttribute("frameborder", "0");
+      ifr.setAttribute("id", "iframeOutput");  
+      document.getElementById("iframewrapper").innerHTML = "";
+      document.getElementById("iframewrapper").appendChild(ifr);
+      var ifrw = (ifr.contentWindow) ? ifr.contentWindow : (ifr.contentDocument.document) ? ifr.contentDocument.document : ifr.contentDocument;
+      ifrw.document.open();
+      ifrw.document.write(text);
+      ifrw.document.close();
     };
 
       $( document ).ready(function() {
