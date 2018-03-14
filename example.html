@@ -1,6 +1,10 @@
 
 <html>
     <body>
+        <p>Thanks for taking part in this experiment. I can't believe someone actually wanted to take part, I mean why would 
+           you agree to be 'zapped into cyberspace'? Anyway, you'll make it back out fine. Probably. <br /><br /> All we need you 
+           to do is reach the green 'Goal' points and you'll be back with us in no time. <br /><br /> As you can see, you can edit
+           the code on the left hand side, can you make it past the first level?</p>
     
     <div id="divMain"></div>
     
@@ -27,21 +31,28 @@
                 "Level 0",
                 new Map
                 (
+                    /*
+                     *  BEGIN EDITING
+                     */ 
                     mapTerrains,
                     [
-                        "xxxxxxxxxxxx",
-                        "x..........x",
-                        "x.p........x",
-                        "x.....x....x",
-                        "x.....x..+.x",
-                        "x.....x....x",
-                        "x..o..x..+.x",
-                        "x.....x....x",
-                        "x..o..x....x",
-                        "x..........x",
-                        "x..........x",
-                        "xxxxxxxxxxxx",
+                        "xxxxxxxxxxxxx",
+                        "x...........x",
+                        "x.....p.....x",
+                        "x...........x",
+                        "x..xxxxxxx..x",
+                        "x..x.....x..x",
+                        "x..x.o.+.x..x",
+                        "x..x.....x..x",
+                        "x..x.+.o.x..x",
+                        "x..x.....x..x",
+                        "x..xxxxxxx..x",
+                        "x...........x",
+                        "xxxxxxxxxxxxx",
                     ]
+                    /*
+                     *  END EDITING
+                     */
                 )
             );
     
@@ -331,28 +342,28 @@
     
             var inputHelper = Globals.Instance.inputHelper;
     
-            if (inputHelper.keyCodePressed == 65) // a
+            if ((inputHelper.keyCodePressed == 65) || (inputHelper.keyCodePressed == 37)) // a or left arrow
             {
                 this.updateForTimerTick_PlayerMove
                 (
                     new Coords(-1, 0)
                 );
             }
-            else if (inputHelper.keyCodePressed == 68) // d
+            else if ((inputHelper.keyCodePressed == 68) || (inputHelper.keyCodePressed == 39)) // d or right arrow
             {
                 this.updateForTimerTick_PlayerMove
                 (
                     new Coords(1, 0)
                 );
             }
-            else if (inputHelper.keyCodePressed == 83) // s
+            else if ((inputHelper.keyCodePressed == 83) || (inputHelper.keyCodePressed == 40)) // s or down arrow
             {
                 this.updateForTimerTick_PlayerMove
                 (
                     new Coords(0, 1)
                 );
             }
-            else if (inputHelper.keyCodePressed == 87) // w
+            else if ((inputHelper.keyCodePressed == 87) || (inputHelper.keyCodePressed == 38)) // w or up arrow
             {
                 this.updateForTimerTick_PlayerMove
                 (
@@ -454,7 +465,7 @@
                 Globals.Instance.displayHelper.drawLevel(this);
     
                 var divWinMessage = document.createElement("div");
-                divWinMessage.innerHTML = "You win!";
+                divWinMessage.innerHTML = "You win! \n(but that was an easy one)";
                 document.body.appendChild(divWinMessage);
             }
         }
