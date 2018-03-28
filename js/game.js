@@ -12,7 +12,7 @@ var keys = {
 	83: 'sdown'
 };
 
-var levelFileNames = [
+var levelFiles = [
 	'levelOne.js',
 	'levelTwo.js',
 	'levelThree.js',
@@ -95,8 +95,8 @@ function moveToNextLevel() {
 // AJAX request to get the level text file and load it
 function getLevel(levelNumber) {
 	var fileName;
-	if (levelNumber < levelFileNames.length) {
-		fileName = levelFileNames[levelNumber];
+	if (levelNumber < levelFiles.length) {
+		fileName = levelFiles[levelNumber];
 	}
 	else {
 		fileName = "thereIsNoLevel.js";
@@ -182,8 +182,8 @@ function submitCode(lvlNum) {
 	if (validatedStartLevel) {
 		map.reset();
 		validatedStartLevel(map);
-		if (lvlNum >= levelFileNames.length) {
-			// don't do this for dummy level
+		if (lvlNum >= levelFiles.length) {
+			// don't do this for thereIsNoLevel.js
 			return;
 		}
 		display.drawAll(map);
