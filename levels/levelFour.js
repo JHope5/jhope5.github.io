@@ -31,7 +31,7 @@ function startLevel(map) {
         map.placeObject(x, map.getHeight() - 1, 'wall');
     }
 
-    map.placeObject(7, 5, 'goal');
+    map.placeObject(7, 7, 'goal');
 }
 
 function validateLevel(map) {
