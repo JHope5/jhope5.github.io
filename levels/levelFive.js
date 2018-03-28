@@ -36,6 +36,6 @@ function startLevel(map) {
 }
 
 function validateLevel(map) {
-    validateAtLeastXObjects(map, 45, 'mine');
+    validateAtLeastXObjects(map, 40, 'mine');
     validateExactlyXObjects(map, 1, 'goal');
 }

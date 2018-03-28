@@ -5,7 +5,7 @@ var objects = {
 	},
 	'wall': {
 		'symbol': '#',
-		'colour': '#fff',
+		'colour': '#b30000',
 		'passable': false
 	},
 	'goal' : {
@@ -19,7 +19,7 @@ var objects = {
 	},
 	'player' : {
 		'symbol': 'P',
-		'colour': '#0ff',
+		'colour': '#fff',
 		'passable': false
 	},
 	'mine' : {
