@@ -3,94 +3,59 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Dr. Wolf's Cyber Experiment</title>
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="css/main.css" rel="stylesheet">
-  <script src="js/1.12.4/jquery.min.js"></script>
-  <script src="js/1.12.4/jquery-ui.js"></script>
-  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="lib/codemirror/lib/codemirror.css">
+  <link rel="stylesheet" href="lib/codemirror/theme/eclipse.css">
 
-<link rel=stylesheet href=lib/codemirror.css>
-<script src=lib/codemirror.js></script>
-<script src=lib/xml.js></script>
-<script src=lib/javascript.js></script>
-<script src=lib/css.js></script>
-<script src=lib/closetag.js></script>
-<script src=js/custom.js></script>
+  <!-- Scripts -->
+  <script src="lib/codemirror/lib/codemirror.js"></script>
+  <script src="lib/codemirror/mode/javascript/javascript.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-ui.js"></script>
+  <script src="lib/rotjs/rot.js"></script>
+  <script src="lib/shortcut.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/objects.js"></script>
 
-<style type="text/css">
-  .CodeMirror {
-    height: auto;
-  }
-  iframe {
-    width: 49%;
-    float: left;
-    height: 300px;
-    border: 1px solid black;
-    border-left: 0px;
-  }
-</style>
 </head>
-<body>
+<body onload="init();">
 <div class="panel-primary header">
   <div class="panel-heading">
     <h3 class="panel-title">
-      <button id="runButton" type="button" class="btn btn-default" onclick="executeCode()">Execute Code</button>
-      <button id="resetButton" type="button" class="btn btn-default" onclick="window.location.reload()">Reset Level</button>
+      <button id="runButton" type="button" class="btn btn-default" onclick="submitCode()">Execute Code</button>
+      <button id="resetButton" type="button" class="btn btn-default" onclick="resetEditor()">Reset Level</button>
+      <button id="instructionsButton" type="button" class="btn btn-default" style="float:right;">Instructions</button>
     </h3>
   </div>
 </div>
 
-   <div id="mainContent" class="mainContent">
-     <div id="mainContentHolder">
-      <div class="main-left">
-        <div class="left-inner-content">
-          <div class="left-inner-main">
-              <textarea id=editor name=editor></textarea>
-          </div>
-        </div>
-      </div>
-      <div class="main-right">
-        <div class="right-inner-content">
-          <div class="right-inner-main">
-            <div id="iframewrapper"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+<div id="mainContent" class="mainContent">
+    <div id="mainContentHolder">
+     <div class="main-left">
+       <div class="left-inner-content">
+         <div class="left-inner-main">
+             <textarea id="editor" name="editor"></textarea>
+         </div>
+       </div>
+     </div>
+     <div class="main-right">
+       <div class="right-inner-content">
+         <div class="right-inner-main">
+           <div id="screen"></div>
+           <div id="msg"></div>
+         </div>
+       </div>
+     </div>
    </div>
-<script>
-// Initializing CodeMirror editor
-var textArea = document.getElementById('editor');
-var editor = CodeMirror.fromTextArea(textArea, {
-  mode: 'text/html',
-  tabMode: 'indent',
-  lineNumbers: true,
-  lineWrapping: true,
-  autoCloseTags: true
-});
-
-function get_file(url, callback)
-{
-    xmlhttp=new XMLHttpRequest();
-    xmlhttp.open("GET", url, true);
-    xmlhttp.onreadystatechange = function()
-    {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
-        {
-            callback(xmlhttp.responseText);
-        }
-    }
-    xmlhttp.send();
-}
-
-get_file("example.html", function(response)
-{
-    document.getElementById('editor').innerHTML=response;
-    // Loading file into CodeMirror editor
-    editor.getDoc().setValue(response);
-    loadEditor(editor);
-});
-</script>
-
+  </div>
 </body>
 </html>

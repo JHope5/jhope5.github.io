@@ -4,12 +4,27 @@ body,html{
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	padding-bottom: 20px;
 }
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+h1 {
+	font-size: 60px;
+	margin-top: 50px;
+	font-family: 'Luckiest Guy', Helvetica, sans-serif;
+}
+
+p {
+	font-size: 20px;
+	line-height: 2;
+  }
+  
+h3 {
+	padding: 0 20px;
+  }
 ul{
 	margin: 0;
 	padding: 0;
@@ -28,7 +43,6 @@ ul{
 .header li{
 	list-style: none;
 	display: inline;
-	float: left;
 }
 .header li.stackH,.header li.stackV{
 	background: url("../img/layout_change_icon.png");
@@ -53,36 +67,70 @@ ul{
 }
 .left-inner-content{
     padding-left: 10px;
-    padding-right: 5px;
+	padding-right: 5px;
+	height: 100%;
 }
 .right-inner-content{
     padding-left: 5px;
     padding-right: 10px;
 }
-.left-inner-content,.right-inner-content{
-}
+
 .left-inner-main,.right-inner-main{
 	background: #FFF;
 	overflow: auto;
 	padding: 0 10px;
 }
+
 .right-inner-main{
 	padding: 0;
 }
-.left-inner-main div,.right-inner-main div{
-	/*height: initial;*/
+
+.left-inner-main{
+	padding: 0;
+	height: 100%;
 }
+
+.CodeMirror {
+	height: auto;
+}
+
+.CodeMirror-lines .disabled {
+	background: rgba(9, 255, 0, 0.342) !important;
+}
+
 #mainContentHolder{
 	position: relative;
 }
-#draggable{
-	position: absolute;
-    z-index: 3;
-    width: 10px;
-    cursor: col-resize;
-    background: transparent;
+
+#screenPane {
+	float: left;
+	width: 602px;
 }
-#iframewrapper, #iframeOutput{
-	height: 100%;
-	width: 100%;
+
+#screen {
+	float: left;
+}
+
+#screen canvas {
+	border: 0px solid #333;
+}
+
+#screen canvas.focus {
+	border: 0px solid yellow;
+}
+
+#container {
+    width:100%;
+}
+
+#left-content {
+    float:left;
+}
+
+#right-content {
+    float:right;
+}
+
+#footer {
+    clear:both;
 }
