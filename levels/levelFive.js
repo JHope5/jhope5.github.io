@@ -37,5 +37,5 @@ function startLevel(map) {
 
 function validateLevel(map) {
     validateAtLeastXObjects(map, 45, 'mine');
-    validateExactlyXManyObjects(map, 1, 'goal');
+    validateExactlyXObjects(map, 1, 'goal');
 }

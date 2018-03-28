@@ -30,12 +30,12 @@ function startLevel(map) {
         map.placeObject(x, 5, 'wall');
         map.placeObject(x, map.getHeight() - 1, 'wall');
     }
-    
+
     map.placeObject(7, 5, 'goal');
 }
 
 function validateLevel(map) {
-    numBlocks = 2 * (map.getHeight()-13) + 2 * (map.getWidth()-10);
-    validateAtLeastXObjects(map, numBlocks, 'wall');
-    validateExactlyXManyObjects(map, 1, 'goal');
+    numWalls = 5 * (map.getHeight()-5) + 5 * (map.getWidth()-10);
+    validateAtLeastXObjects(map, numWalls, 'wall');
+    validateExactlyXObjects(map, 1, 'goal');
 }
