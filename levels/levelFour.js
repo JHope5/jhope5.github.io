@@ -35,7 +35,7 @@ function startLevel(map) {
 }
 
 function validateLevel(map) {
-    numWalls = 5 * (map.getHeight()-5) + 5 * (map.getWidth()-10);
+    numWalls = 4 * (map.getHeight()-5) + 5 * (map.getWidth()-10);
     validateAtLeastXObjects(map, numWalls, 'wall');
     validateExactlyXObjects(map, 1, 'goal');
 }
