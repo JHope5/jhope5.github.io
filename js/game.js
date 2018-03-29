@@ -28,7 +28,7 @@ var map;
 var currentLevel = 0;
 
 function init() {
-	display = new ROT.Display({width: dimensions.width, height: dimensions.height, fontSize: 15, fontStyle: "bold"});
+	display = new ROT.Display({width: dimensions.width, height: dimensions.height, fontSize: 20, fontStyle: "bold"});
 
 	// drawObject finds the symbol and colour of an object
 	display.drawObject = function (x, y, object, bgColour, multiplicand) {
@@ -48,7 +48,6 @@ function init() {
 			colour = ROT.Color.toHex(ROT.Color.multiply(multiplicand, ROT.Color.fromString(colour)));
 			bgColour = ROT.Color.toHex(ROT.Color.multiply(multiplicand, ROT.Color.fromString(bgColour)));
 		}
-
 		display.draw(x, y, symbol, colour, bgColour);
 	};
 
@@ -59,7 +58,6 @@ function init() {
 			}
 		}
 		if (map.player) { map.player.draw(); }
-
 	}
 
 	$('#screen').append(display.getContainer());
@@ -76,7 +74,7 @@ function init() {
 		$('.CodeMirror').removeClass('focus');
 	});
 
-	msg = new ROT.Display({width: dimensions.width, height: 2, fontSize: 15});
+	msg = new ROT.Display({width: dimensions.width * 1.224, height: 2, fontSize: 15});
 	$('#msg').append(msg.getContainer());
 	msg.write = function(text) {
 		msg.clear();

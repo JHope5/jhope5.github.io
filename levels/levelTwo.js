@@ -1,4 +1,4 @@
-// {"editable": [[12, 32]]}
+// {"editable": [[13, 31]]}
 /*
  * Level 2
  *
@@ -20,7 +20,7 @@ function startLevel(map) {
         map.placeObject(19, y, 'wall');
         map.placeObject(map.getWidth() - 27, y, 'wall');
     }
-
+    
     for (x = 5; x <= map.getWidth() - 5; x++) {
         map.placeObject(x, 3, 'wall');
         map.placeObject(x, map.getHeight() - 9, 'wall');

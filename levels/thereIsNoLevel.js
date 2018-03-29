@@ -33,5 +33,5 @@ function startLevel(map) {
     map.placeObject(map.getWidth()-5, map.getHeight()-4, 'goal');
     display.drawAll(map);
 
-    display.drawText(1,1, "You've completed all of the available levels. Hopefully you enjoyed the game. Thanks for playing!");
+    msg.drawText(0, 0, "You've completed all of the available levels, hopefully you've enjoyed the game. Thanks for playing!");
 }

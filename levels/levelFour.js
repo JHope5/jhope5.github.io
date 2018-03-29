@@ -1,4 +1,4 @@
-// {"editable": [[16, 32]]}
+// {"editable": [[17, 31]]}
 /*
  * Level 4
  *
@@ -13,9 +13,9 @@
  * Good luck!
  */
 function startLevel(map) {
-    map.placePlayer(map.getWidth()-10, map.getHeight()-3);
+    map.placePlayer(map.getWidth()-10, map.getHeight()-4);
 
-    for (y = 5; y <= map.getHeight(); y++) {
+    for (y = 4; y <= map.getHeight() - 2; y++) {
         map.placeObject(5, y, 'wall');
         map.placeObject(15, y, 'wall');
         map.placeObject(25, y, 'wall');
@@ -24,18 +24,18 @@ function startLevel(map) {
     }
 
     for (x = 5; x <= map.getWidth() - 5; x++) {
-        map.placeObject(x, 20, 'wall');
-        map.placeObject(x, 15, 'wall');
-        map.placeObject(x, 10, 'wall');
-        map.placeObject(x, 5, 'wall');
-        map.placeObject(x, map.getHeight() - 1, 'wall');
+        map.placeObject(x, 18, 'wall');
+        map.placeObject(x, 13, 'wall');
+        map.placeObject(x, 8, 'wall');
+        map.placeObject(x, 3, 'wall');
+        map.placeObject(x, map.getHeight() - 2, 'wall');
     }
 
-    map.placeObject(7, 7, 'goal');
+    map.placeObject(9, 5, 'goal');
 }
 
 function validateLevel(map) {
-    numWalls = 4 * (map.getHeight()-5) + 5 * (map.getWidth()-10);
+    numWalls = 3 * (map.getHeight()-10) + 6 * (map.getWidth()-10);
     validateAtLeastXObjects(map, numWalls, 'wall');
     validateExactlyXObjects(map, 1, 'goal');
 }
