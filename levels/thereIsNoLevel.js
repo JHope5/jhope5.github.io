@@ -8,6 +8,11 @@
  * You can play the maze as many times as you like if
  * you're still killing time. Press either of the
  * Execute or Reset buttons to generate a new maze.
+ * 
+ * I would also appreciate it if you could take this
+ * survey: https://www.surveymonkey.co.uk/r/929B8YY
+ * 
+ * Thank you!
  */
 function startLevel(map) {
     map.placePlayer(7, 5);
