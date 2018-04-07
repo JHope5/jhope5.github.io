@@ -15,15 +15,15 @@ function validate(allCode, playerCode, level) {
 	msg.clear();
 	try {
 		for (var i = 0; i < forbidden.length; i++) {
-			var badWord = forbidden[i];
-			if (playerCode.indexOf(badWord) > -1) {
-				throw 'You are not allowed to use ' + badWord + '!';
+			var forbiddenWord = forbidden[i];
+			if (playerCode.indexOf(forbiddenWord) > -1) {
+				throw forbiddenWord + ' is forbidden!';
 			}
 		}
 
 		var dummyMap = new Map(new DummyDisplay);
 
-		eval(allCode); // get startLevel and (opt) validateLevel methods
+		eval(allCode);
 
 		startLevel(dummyMap);
 		if (typeof(validateLevel) != 'undefined') {
