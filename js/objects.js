@@ -14,7 +14,7 @@ var objects = {
 		'passable': true,
 		'onCollision': function (player) {
 			// player moves onto goal
-			moveToNextLevel();
+			loadNextLevel();
 		}
 	},
 	'player' : {
