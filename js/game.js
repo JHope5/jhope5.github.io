@@ -85,7 +85,7 @@ function init() {
 	getLevel(currentLevel);
 }
 
-function loadNextLevel() {
+function moveToNextLevel() {
 	currentLevel++;
 	getLevel(currentLevel);
 };
@@ -99,11 +99,11 @@ function getLevel(levelNumber) {
 	else {
 		fileName = "thereIsNoLevel.js";
 	}
-	$.get('levels/' + fileName, function (lvlCode) {
+	$.get('levels/' + fileName, function (codeText) {
 		if (editor) {
 			editor.toTextArea();
 		}
-		loadLevel(lvlCode, lvlNum);
+		loadLevel(codeText, levelNumber);
 	});
 }
 
@@ -146,7 +146,7 @@ function loadLevel(lvlCode, lvlNum) {
 		}
 	});
 
-	// set background colour for lines that are locked and can't be edited
+	// set background colour for lines that can't be changed
 	editor.on('update', function (instance) {
 		for (var i = 0; i < editor.lineCount(); i++) {
 			if (editableLines.indexOf(i) == -1) {
