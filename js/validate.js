@@ -1,5 +1,5 @@
 
-var forbidden = ['eval', 'prototype', 'delete', 'return', 'moveToNextLevel'];
+var forbidden = ['eval', 'prototype', 'delete', 'return', 'moveToNextLevel', 'document'];
 
 var validationRulesByLevel = [ null ];
 
