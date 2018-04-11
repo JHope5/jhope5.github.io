@@ -26,13 +26,13 @@ function startLevel(map) {
     for (var i = 0; i < 50; i++) {
         var x = randomNum(0, map.getWidth() - 1);
         var y = randomNum(0, map.getHeight() - 1);
-        if (x != map.getWidth() - 1 && y != map.getHeight() - 1) {
+        if (x != 2 && y != map.getHeight() - 1) {
             // don't place mine over goal!
             map.placeObject(x, y, 'mine', '#000');
         }
     
     }
-    map.placeObject(map.getWidth() - 1, map.getHeight() - 1, 'goal');
+    map.placeObject(2, map.getHeight() - 1, 'goal');
 }
 
 function validateLevel(map) {
