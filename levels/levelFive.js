@@ -32,7 +32,7 @@ function startLevel(map) {
         }
     
     }
-    map.placeObject(2, map.getHeight() - 1, 'goal');
+    map.placeObject(map.getWidth() - 1, map.getHeight() - 1, 'goal');
 }
 
 function validateLevel(map) {
