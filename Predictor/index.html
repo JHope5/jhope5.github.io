@@ -1,39 +1,112 @@
-<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prediction League</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            window.onload = function() {
+                (document.getElementsByTagName('th')[5]).click();
+            };
+        </script>
+    </head>
 
-<div class="ptable">
-  <h1 class="headin">Standings</h1>
-					<table>
-						<tr class="col">
-							<th>Player</th>
-							<th>GP</th>
-							<th>CS</th>
-                            <th>CR</th>
-                            <th>L</th>
-							<th>PTS</th>
-						</tr>
-						<tr class="wpos">
-							<td>Phil</td>
-							<td>3</td> <!-- Games -->
-							<td>0</td> <!-- Correct Score -->
-                            <td>1</td> <!-- Correct Result -->
-                            <td>2</td> <!-- Lost -->
-							<td>3</td> <!-- Points -->
-						</tr>
-						<tr class="wpos">
-							<td>Jamie</td>
-							<td>3</td> <!-- Games -->
-							<td>2</td> <!-- Correct Score -->
-                            <td>0</td> <!-- Correct Result -->
-                            <td>1</td> <!-- Lost -->
-							<td>10</td> <!-- Points -->
-						</tr>
-						<tr class="wpos">
-							<td>Matt</td>
-							<td>3</td> <!-- Games -->
-							<td>0</td> <!-- Correct Score -->
-                            <td>1</td> <!-- Correct Result -->
-                            <td>2</td> <!-- Lost -->
-							<td>3</td> <!-- Points -->
-						</tr>
-					</table>
-</div>
+    <body>
+            <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+
+            <div class="ptable">
+              <h1 class="headin">Standings</h1>
+                                <table id="leagueTable">
+                                    <tr class="col">
+                                        <th>Player</th>
+                                        <th>GP</th>
+                                        <th>CS</th>
+                                        <th>CR</th>
+                                        <th>L</th>
+                                        <th onclick="sortTable(0);">PTS</th>
+                                    </tr>
+                                    <tr class="pos">
+                                        <td>Phil</td>
+                                        <td>3</td> <!-- Games -->
+                                        <td>0</td> <!-- Correct Score -->
+                                        <td>1</td> <!-- Correct Result -->
+                                        <td>2</td> <!-- Lost -->
+                                        <td>3</td> <!-- Points -->
+                                    </tr>
+                                    <tr class="wpos">
+                                        <td>Jamie</td>
+                                        <td>3</td> <!-- Games -->
+                                        <td>2</td> <!-- Correct Score -->
+                                        <td>0</td> <!-- Correct Result -->
+                                        <td>1</td> <!-- Lost -->
+                                        <td>10</td> <!-- Points -->
+                                    </tr>
+                                    <tr class="pos">
+                                        <td>Matt</td>
+                                        <td>3</td> <!-- Games -->
+                                        <td>0</td> <!-- Correct Score -->
+                                        <td>1</td> <!-- Correct Result -->
+                                        <td>2</td> <!-- Lost -->
+                                        <td>3</td> <!-- Points -->
+                                    </tr>
+                                </table>
+            </div>
+    </body>
+</html>
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("leagueTable");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc"; 
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /* Check if the two rows should switch place,
+      based on the direction, asc or desc: */
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          // If so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      // Each time a switch is done, increase this count by 1:
+      switchcount ++; 
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
