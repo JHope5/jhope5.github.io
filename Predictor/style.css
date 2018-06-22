@@ -80,3 +80,13 @@ table .col{
 .pos:hover td{
 	color: #000000;
 }
+
+#button {
+    position:absolute;
+    top:0px;
+    left:0;
+    background: transparent;
+    border: none !important;
+    width:170px;
+    font-size:0;
+}
