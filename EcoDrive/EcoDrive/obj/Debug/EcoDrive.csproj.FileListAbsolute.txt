@@ -1,0 +1,27 @@
+C:\Users\Jamie-\Desktop\SE Challenge\Sokoban\Sokoban\bin\Debug\Sokoban.exe.config
+C:\Users\Jamie-\Desktop\SE Challenge\Sokoban\Sokoban\bin\Debug\Sokoban.exe
+C:\Users\Jamie-\Desktop\SE Challenge\Sokoban\Sokoban\bin\Debug\Sokoban.pdb
+C:\Users\Jamie-\Desktop\SE Challenge\Sokoban\Sokoban\obj\Debug\EcoDrive.csprojResolveAssemblyReference.cache
+C:\Users\Jamie-\Desktop\SE Challenge\Sokoban\Sokoban\obj\Debug\EcoDrive.Board.resources
+C:\Users\Jamie-\Desktop\SE Challenge\Sokoban\Sokoban\obj\Debug\Sokoban.Properties.Resources.resources
+C:\Users\Jamie-\Desktop\SE Challenge\Sokoban\Sokoban\obj\Debug\EcoDrive.csproj.GenerateResource.Cache
+C:\Users\Jamie-\Desktop\SE Challenge\Sokoban\Sokoban\obj\Debug\Sokoban.exe
+C:\Users\Jamie-\Desktop\SE Challenge\Sokoban\Sokoban\obj\Debug\Sokoban.pdb
+E:\EcoDrive\Sokoban\bin\Debug\Sokoban.exe.config
+E:\EcoDrive\Sokoban\obj\Debug\Sokoban.exe
+E:\EcoDrive\Sokoban\obj\Debug\Sokoban.pdb
+E:\EcoDrive\Sokoban\bin\Debug\Sokoban.exe
+E:\EcoDrive\Sokoban\bin\Debug\Sokoban.pdb
+E:\EcoDrive\Sokoban\obj\Debug\EcoDrive.csprojResolveAssemblyReference.cache
+E:\EcoDrive\Sokoban\obj\Debug\EcoDrive.Board.resources
+E:\EcoDrive\Sokoban\obj\Debug\Sokoban.Properties.Resources.resources
+E:\EcoDrive\Sokoban\obj\Debug\EcoDrive.csproj.GenerateResource.Cache
+G:\EcoDrive\Sokoban\bin\Debug\Sokoban.exe.config
+G:\EcoDrive\Sokoban\obj\Debug\Sokoban.exe
+G:\EcoDrive\Sokoban\obj\Debug\Sokoban.pdb
+G:\EcoDrive\Sokoban\bin\Debug\Sokoban.exe
+G:\EcoDrive\Sokoban\bin\Debug\Sokoban.pdb
+G:\EcoDrive\Sokoban\obj\Debug\EcoDrive.csprojResolveAssemblyReference.cache
+G:\EcoDrive\Sokoban\obj\Debug\EcoDrive.Board.resources
+G:\EcoDrive\Sokoban\obj\Debug\Sokoban.Properties.Resources.resources
+G:\EcoDrive\Sokoban\obj\Debug\EcoDrive.csproj.GenerateResource.Cache
