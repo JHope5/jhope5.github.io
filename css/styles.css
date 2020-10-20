@@ -272,6 +272,10 @@ button,
   -webkit-appearance: button;
 }
 
+.bootlink {
+  color: #fff;
+}
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
