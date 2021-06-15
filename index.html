@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>James Hope Portfolio</title>
+        <title>Anglo-Scottish Cup</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
@@ -20,108 +20,177 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">James Hope</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/avatar.png" alt="" /></span>
+                <span class="d-block d-lg-none">EURO 2020</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/UEFA.png" alt="" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#match1">Matchday 1</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#match2">Matchday 2</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#match3">Matchday 3</a></li>
                 </ul>                
             </div>
             <a style="color: #fff" href="https://startbootstrap.com/themes/resume/">View Bootstrap Theme</a>
         </nav>
         <!-- Page Content-->
         <div class="container-fluid p-0">
-            <!-- About-->
+            
+            <h1 class="mb-0" style="text-align:center">
+                EURO 2020 Predictor
+            </h1>
+            <!-- League Table -->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        James
-                        <span class="text-primary">Hope</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        07494274375 ·
-                        <a href="mailto:jamiehope1996@gmail.com">jamiehope1996@gmail.com</a>
-                    </div>
-                    <p class="lead mb-5">Having graduated with degrees in Software Engineering and Advanced Computer Science, I have experience developing with PHP, HTML, JavaScript, Java, and C#.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/jamie-hope-805372106/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/JHope5"><i class="fab fa-github"></i></a>
-                    </div>
+                    <h3 style="text-align:center">Normal Rules</h3>
+                    <p style="text-align:center">This is the table with normal rules: 3 points for a correct score and 1 point for a correct result.</p><br/>
+                        <table id="normalScores">
+                            <tr>
+                                <th>Name</th>
+                                <th>Correct Results</th>
+                                <th>Correct Scores</th>
+                                <th>Total Points</th>        
+                            </tr>
+                            <tr>
+                                <td>Matt</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Matt</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Matt</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>8</td>
+                            </tr>
+                        </table><br/><br/>
+                        <h3 style="text-align:center">UEFA Rules</h3>
+                        <p style="text-align:center">This is the table with UEFA's extra rules (minus the bonus stuff). Includes points for correctly guessing the number goals for each team and the correct goal difference.</p><br/>
+                        <table id="uefaRules">
+                            <tr>
+                                <th>Name</th>
+                                <th>Correct Results</th>
+                                <th>Correct Scores</th>
+                                <th>Home Goals</th>
+                                <th>Away Goals</th>
+                                <th>Goal Difference</th>
+                                <th>Total Points</th>        
+                            </tr>
+                            <tr>
+                                <td>Matt</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>8</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Matt</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>8</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Matt</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>8</td>
+                                <td>8</td>
+                            </tr>
+                        </table>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Projects-->
-            <section class="resume-section" id="projects">
+            <!-- MD1 -->
+            <section class="resume-section" id="match1">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Projects</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Student-Project Allocation Problem</h3> 
-                            <div class="subheading mb-3">PHP (Laravel), Java</div>
-                            <p>Master's project completed while at Swansea University. A system that allows students and lecturers to log in and select their preferences for final year projects. The administrator can run an algorithm, written in Java, that allocates students to projects/lecturers.</p>
-                            <p><a href="https://github.com/JHope5/cscm10">View Code</a></p>
+                    <h2 class="mb-5">Matchday 1</h2>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Group A</h3> 
+                                <div class="group">
+                                    <div class="subheading mb-3">Turkey 0-3 Italy</div>
+                                    <p><b>Jamie: </b>0-3 (+1 point)<br/><b>Matt: </b>1-2 (+1 point)<br/><b>Phil: </b>1-2 (+1 point)</p>
+                                </div>
+                                <div class="group">
+                                    <div class="subheading mb-3">Wales 1-1 Switzerland</div>
+                                    <p><b>Jamie: </b>1-2 (+0 points)<br/><b>Matt: </b>0-1 (+0 points)<br/><b>Phil: </b>1-1 (+3 points)</p>
+                                </div>
+                            </div>
+                        </div><div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Group B</h3> 
+                                <div class="group">
+                                    <div class="subheading mb-3">Denmark 0-1 Finland</div>
+                                    <p><b>Jamie: </b>1-0 (+0 points)<br/><b>Matt: </b>2-0 (+0 points)<br/><b>Phil: </b>3-0 (+0 points)</p>
+                                </div>
+                                <div class="group">
+                                    <div class="subheading mb-3">Belgium 3-0 Russia</div>
+                                    <p><b>Jamie: </b>3-1 (+1 point)<br/><b>Matt: </b>3-1 (+1 point)<br/><b>Phil: </b>2-0 (+1 point)</p>
+                                </div>
+                            </div>
+                        </div><div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Group C</h3> 
+                                <div class="group">
+                                    <div class="subheading mb-3">Austria 3-1 North Macedonia</div>
+                                    <p><b>Jamie: </b>2-0 (+1 point)<br/><b>Matt: </b>2-0 (+1 point)<br/><b>Phil: </b>0-0 (+0 points)</p>
+                                </div>
+                                <div class="group">
+                                    <div class="subheading mb-3">Netherlands 3-2 Ukraine</div>
+                                    <p><b>Jamie: </b>2-0 (+1 point)<br/><b>Matt: </b>2-0 (+1 point)<br/><b>Phil: </b>2-0 (+1 point)</p>
+                                </div>
+                            </div>
+                        </div><div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Group D</h3> 
+                                <div class="group">
+                                    <div class="subheading mb-3">England 1-0 Croatia</div>
+                                    <p><b>Jamie: </b>1-0 (+3 points)<br/><b>Matt: </b>1-0 (+3 points)<br/><b>Phil: </b>2-1 (+1 point)</p>
+                                </div>
+                                <div class="group">
+                                    <div class="subheading mb-3">Scotland 0-2 Czech Republic</div> (booo)
+                                    <p><b>Jamie: </b>2-1 (+0 points)<br/><b>Matt: </b>2-1 (+0 points)<br/><b>Phil: </b>1-2 (+1 point)</p>
+                                </div>
+                            </div>
+                        </div><div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Group E</h3> 
+                                <div class="group">
+                                    <div class="subheading mb-3">Poland 1-2 Slovakia</div>
+                                    <p><b>Jamie: </b>0-0 (+0 points)<br/><b>Matt: </b>1-0 (+0 points)<br/><b>Phil: </b>1-1 (+0 points)</p>
+                                </div>
+                                <div class="group">
+                                    <div class="subheading mb-3">Spain 0-0 Sweden</div>
+                                    <p><b>Jamie: </b>2-0 (+0 points)<br/><b>Matt: </b>2-0 (+0 points)<br/><b>Phil: </b>3-1 (+0 points)</p>
+                                </div>
+                            </div>
+                        </div><div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Group F</h3> 
+                                <div class="group">
+                                    <div class="subheading mb-3">Hungary 0-3 Portugal</div>
+                                    <p><b>Jamie: </b>1-2 (+1 point)<br/><b>Matt: </b>1-3 (+1 point)<br/><b>Phil: </b>0-3 (+3 points)</p>
+                                </div>
+                                <div class="group">
+                                    <div class="subheading mb-3">France 1-0 Germany</div> (LATEST)
+                                    <p><b>Jamie: </b>2-0<br/><b>Matt: </b>2-2<br/><b>Phil: </b>2-2</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">SMS System</h3>
-                            <div class="subheading mb-3">PHP (Yii2)</div>
-                            <p>A basic application completed with the goal being to get to know the Yii2 framework. Users can send or view text messages, with validation checks to ensure the message is not blank and the recipient number is a valid UK mobile number. Messages are stored in a database.</p>
-                            <p><a href="https://github.com/JHope5/sms-system">View Code</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Multi-User Blog</h3>
-                            <div class="subheading mb-3">PHP (Laravel)</div>
-                            <p>Coursework completed while at Swansea University. An application that allows users to log in and make blog posts about certain topics. Users can attach images to posts, and can also comment on posts.</p>
-                            <p><a href="https://github.com/JHope5/cscm48">View Code</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Topic-Specific Brain Training Game</h3>
-                            <div class="subheading mb-3">JavaScript, HTML, CSS</div>
-                            <p>Honour's project completed as part of a BEng Software Engineering degree at Edinburgh Napier University. Use your knowledge of JavaScript to complete the puzzles.</p>
-                            <p><a href="Projects/DrWolf/index.html">View Demo</a> | <a href="https://github.com/JHope5/Honours-Project">View Code</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">May 2018</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Message Filtering Service</h3>
-                            <div class="subheading mb-3">C#</div>
-                            <p>Coursework completed while at Edinburgh Napier University. A system that takes (user provided) tweets, SMS messages, Emails, and significant incident reports. Where appropriate, textspeak is expanded with its meaning, URLs are quarantined, and any hashtags or mentions in Tweets are stored in separate 'Trending' and 'Mentions' files. Messages are stored in JSON format.</p>
-                            <p><a href="https://github.com/JHope5/Message-Filtering-Service">View Code</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">November 2016</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Sky Wars</h3>
-                            <div class="subheading mb-3">Java</div>
-                            <p>Coursework at Edinburgh Napier University. A game where the user takes on enemies to see how long they can stay alive, there is an offensive and defensive mode that change how many enemy ships can destroy the 'mothership'.</p>
-                            <p><a href="https://github.com/JHope5/Sky-Wars">View Code</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">November 2016</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Eco Drive</h3>
-                            <div class="subheading mb-3">C#, XML</div>
-                            <p>Completed at the induction for Edinburgh Napier University. A simple game where the user should move the car to the finish line in the fewest moves possible. Levels created in XML format.</p>
-                            <p><a href="https://github.com/JHope5/EcoDrive">View Code</a></p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2016</span></div>
-                    </div>
-                </div>
             </section>
             <hr class="m-0" />
             <!-- Education-->
@@ -182,3 +251,17 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
+<style>
+    #normalScores, #uefaRules,
+    tr, td, th {
+        border: 1px solid black;
+        text-align: center;
+        margin-right: auto; 
+        margin-left: auto;
+    }
+    .group {
+        width: 45%;
+        display: inline-block;
+    }
+</style>

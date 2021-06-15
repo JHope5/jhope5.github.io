@@ -6101,7 +6101,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #107aac !important;
+  background-color: #bd5d38 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10113,6 +10113,7 @@ p.lead {
 
 section.resume-section {
   display: flex;
+  align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 5rem;
