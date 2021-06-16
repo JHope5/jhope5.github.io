@@ -42,29 +42,29 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
-    // UPDATED AS OF TURKEY 0-2 WALES
-    // MATT
-    var mattScores = 2,
-        mattResults = 6,
-        mattHome = 4,
-        mattAway = 6,
-        mattGD = 3,
-        mattNorm = (3*mattScores) + mattResults,
-        mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
-
+    // UPDATED AS OF ITALY 3-0 SWITZERLAND
     // JAMIE
     var jamScores = 1,
-        jamResults = 6,
+        jamResults = 7,
         jamHome = 5,
-        jamAway = 3,
+        jamAway = 4,
         jamGD = 2,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
+ 
+    // MATT
+    var mattScores = 2,
+    mattResults = 7,
+    mattHome = 5,
+    mattAway = 6,
+    mattGD = 3,
+    mattNorm = (3*mattScores) + mattResults,
+    mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
 
     // PHIL
     var philScores = 2,
-        philResults = 6,
-        philHome = 3,
+        philResults = 7,
+        philHome = 4,
         philAway = 6,
         philGD = 3,
         philNorm = (3*philScores) + philResults,
