@@ -1,0 +1,24 @@
+{
+  "name": "jhope5.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "tabulator-tables": "^4.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JHope5/jhope5.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JHope5/jhope5.github.io/issues"
+  },
+  "homepage": "https://github.com/JHope5/jhope5.github.io#readme"
+}
