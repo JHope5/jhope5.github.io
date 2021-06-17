@@ -44,18 +44,18 @@
 $(document).ready(function() {
     // UPDATED AS OF ITALY 3-0 SWITZERLAND
     // JAMIE
-    var jamScores = 1,
+    var jamScores = 2,
         jamResults = 7,
-        jamHome = 5,
-        jamAway = 4,
-        jamGD = 2,
+        jamHome = 6,
+        jamAway = 5,
+        jamGD = 3,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
  
     // MATT
     var mattScores = 2,
-    mattResults = 7,
-    mattHome = 5,
+    mattResults = 8,
+    mattHome = 6,
     mattAway = 6,
     mattGD = 3,
     mattNorm = (3*mattScores) + mattResults,
@@ -63,8 +63,8 @@ $(document).ready(function() {
 
     // PHIL
     var philScores = 2,
-        philResults = 7,
-        philHome = 4,
+        philResults = 8,
+        philHome = 5,
         philAway = 6,
         philGD = 3,
         philNorm = (3*philScores) + philResults,
