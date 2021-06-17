@@ -42,7 +42,7 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
-    // UPDATED AS OF DENMARK 1-2 BELGIUM
+    // UPDATED AS OF NETHERLANDS 2-0 AUSTRIA
 
     // JAMIE
     var jamScores = 2,
@@ -54,20 +54,20 @@ $(document).ready(function() {
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
  
     // MATT
-    var mattScores = 2,
+    var mattScores = 3,
     mattResults = 9,
-    mattHome = 6,
-    mattAway = 7,
-    mattGD = 3,
+    mattHome = 7,
+    mattAway = 8,
+    mattGD = 4,
     mattNorm = (3*mattScores) + mattResults,
     mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
 
     // PHIL
     var philScores = 2,
-        philResults = 9,
+        philResults = 10,
         philHome = 5,
         philAway = 7,
-        philGD = 3,
+        philGD = 4,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
     
