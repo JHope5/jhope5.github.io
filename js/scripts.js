@@ -42,30 +42,31 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
-    // UPDATED AS OF ITALY 3-0 SWITZERLAND
+    // UPDATED AS OF DENMARK 1-2 BELGIUM
+
     // JAMIE
     var jamScores = 2,
-        jamResults = 7,
+        jamResults = 8,
         jamHome = 6,
-        jamAway = 5,
+        jamAway = 6,
         jamGD = 3,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
  
     // MATT
     var mattScores = 2,
-    mattResults = 8,
+    mattResults = 9,
     mattHome = 6,
-    mattAway = 6,
+    mattAway = 7,
     mattGD = 3,
     mattNorm = (3*mattScores) + mattResults,
     mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
 
     // PHIL
     var philScores = 2,
-        philResults = 8,
+        philResults = 9,
         philHome = 5,
-        philAway = 6,
+        philAway = 7,
         philGD = 3,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
