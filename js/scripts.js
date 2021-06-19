@@ -66,7 +66,7 @@ $(document).ready(function() {
     var philScores = 2,
         philResults = 11,
         philHome = 7,
-        philAway = 8,
+        philAway = 9,
         philGD = 4,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
