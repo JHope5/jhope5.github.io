@@ -42,31 +42,31 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
-    // UPDATED AS OF NETHERLANDS 2-0 AUSTRIA
+    // UPDATED AS OF ENGLAND 0-0 SCOTLAND
 
     // JAMIE
     var jamScores = 2,
         jamResults = 8,
         jamHome = 6,
-        jamAway = 6,
+        jamAway = 8,
         jamGD = 3,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
  
     // MATT
     var mattScores = 3,
-    mattResults = 9,
-    mattHome = 7,
-    mattAway = 8,
-    mattGD = 4,
-    mattNorm = (3*mattScores) + mattResults,
-    mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
+        mattResults = 9,
+        mattHome = 9,
+        mattAway = 8,
+        mattGD = 4,
+        mattNorm = (3*mattScores) + mattResults,
+        mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
 
     // PHIL
     var philScores = 2,
         philResults = 10,
-        philHome = 5,
-        philAway = 7,
+        philHome = 7,
+        philAway = 8,
         philGD = 4,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
