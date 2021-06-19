@@ -42,7 +42,7 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
-    // UPDATED AS OF ENGLAND 0-0 SCOTLAND
+    // UPDATED AS OF HUNGARY 1-1 FRANCE
 
     // JAMIE
     var jamScores = 2,
@@ -55,8 +55,8 @@ $(document).ready(function() {
  
     // MATT
     var mattScores = 3,
-        mattResults = 9,
-        mattHome = 9,
+        mattResults = 10,
+        mattHome = 10,
         mattAway = 8,
         mattGD = 4,
         mattNorm = (3*mattScores) + mattResults,
@@ -64,7 +64,7 @@ $(document).ready(function() {
 
     // PHIL
     var philScores = 2,
-        philResults = 10,
+        philResults = 11,
         philHome = 7,
         philAway = 8,
         philGD = 4,
