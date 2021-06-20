@@ -46,27 +46,27 @@ $(document).ready(function() {
 
     // JAMIE
     var jamScores = 2,
-        jamResults = 9,
+        jamResults = 10,
         jamHome = 6,
-        jamAway = 9,
+        jamAway = 10,
         jamGD = 3,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
  
     // MATT
     var mattScores = 3,
-        mattResults = 11,
+        mattResults = 12,
         mattHome = 10,
         mattAway = 8,
-        mattGD = 4,
+        mattGD = 5,
         mattNorm = (3*mattScores) + mattResults,
         mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
 
     // PHIL
     var philScores = 2,
-        philResults = 12,
+        philResults = 13,
         philHome = 7,
-        philAway = 10,
+        philAway = 11,
         philGD = 4,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
