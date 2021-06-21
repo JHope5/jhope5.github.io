@@ -48,17 +48,17 @@ $(document).ready(function() {
     var jamScores = 2,
         jamResults = 10,
         jamHome = 6,
-        jamAway = 10,
+        jamAway = 11,
         jamGD = 3,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
  
     // MATT
-    var mattScores = 3,
+    var mattScores = 4,
         mattResults = 12,
-        mattHome = 10,
-        mattAway = 8,
-        mattGD = 5,
+        mattHome = 11,
+        mattAway = 9,
+        mattGD = 6,
         mattNorm = (3*mattScores) + mattResults,
         mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
 
