@@ -42,32 +42,32 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
-    // UPDATED AS OF HUNGARY 1-1 FRANCE
+    // UPDATED AS OF MACEDONIA 0-3 NETHERLANDS
 
     // JAMIE
-    var jamScores = 2,
+    var jamScores = 3,
         jamResults = 11,
-        jamHome = 7,
-        jamAway = 11,
-        jamGD = 3,
+        jamHome = 8,
+        jamAway = 12,
+        jamGD = 4,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
  
     // MATT
     var mattScores = 4,
-        mattResults = 13,
-        mattHome = 12,
+        mattResults = 14,
+        mattHome = 13,
         mattAway = 9,
         mattGD = 6,
         mattNorm = (3*mattScores) + mattResults,
         mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
 
     // PHIL
-    var philScores = 2,
+    var philScores = 3,
         philResults = 14,
-        philHome = 8,
-        philAway = 11,
-        philGD = 4,
+        philHome = 9,
+        philAway = 12,
+        philGD = 5,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
     
