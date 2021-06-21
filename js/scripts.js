@@ -47,7 +47,7 @@ $(document).ready(function() {
     // JAMIE
     var jamScores = 3,
         jamResults = 11,
-        jamHome = 8,
+        jamHome = 9,
         jamAway = 12,
         jamGD = 4,
         jamNorm = (3*jamScores) + jamResults,
@@ -55,8 +55,8 @@ $(document).ready(function() {
  
     // MATT
     var mattScores = 4,
-        mattResults = 14,
-        mattHome = 13,
+        mattResults = 15,
+        mattHome = 14,
         mattAway = 9,
         mattGD = 6,
         mattNorm = (3*mattScores) + mattResults,
@@ -64,7 +64,7 @@ $(document).ready(function() {
 
     // PHIL
     var philScores = 3,
-        philResults = 14,
+        philResults = 15,
         philHome = 9,
         philAway = 12,
         philGD = 5,
