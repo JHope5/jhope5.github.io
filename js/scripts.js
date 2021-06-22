@@ -45,20 +45,20 @@ $(document).ready(function() {
     // UPDATED AS OF MACEDONIA 0-3 NETHERLANDS
 
     // JAMIE
-    var jamScores = 3,
+    var jamScores = 4,
         jamResults = 11,
-        jamHome = 9,
-        jamAway = 13,
-        jamGD = 4,
+        jamHome = 10,
+        jamAway = 14,
+        jamGD = 5,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
  
     // MATT
-    var mattScores = 4,
+    var mattScores = 5,
         mattResults = 15,
-        mattHome = 14,
-        mattAway = 9,
-        mattGD = 6,
+        mattHome = 15,
+        mattAway = 10,
+        mattGD = 7,
         mattNorm = (3*mattScores) + mattResults,
         mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
 
@@ -66,7 +66,7 @@ $(document).ready(function() {
     var philScores = 3,
         philResults = 15,
         philHome = 9,
-        philAway = 13,
+        philAway = 14,
         philGD = 5,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
