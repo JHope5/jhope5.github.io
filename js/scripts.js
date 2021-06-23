@@ -48,7 +48,7 @@ $(document).ready(function() {
     var jamScores = 4,
         jamResults = 12,
         jamHome = 11,
-        jamAway = 14,
+        jamAway = 15,
         jamGD = 5,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
@@ -66,7 +66,7 @@ $(document).ready(function() {
     var philScores = 3,
         philResults = 16,
         philHome = 10,
-        philAway = 14,
+        philAway = 15,
         philGD = 5,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
