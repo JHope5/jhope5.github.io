@@ -64,7 +64,7 @@ $(document).ready(function() {
 
     // PHIL
     var philScores = 3,
-        philResults = 19,
+        philResults = 20,
         philHome = 10,
         philAway = 17,
         philGD = 5,
