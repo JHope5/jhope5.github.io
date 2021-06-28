@@ -56,7 +56,7 @@ $(document).ready(function() {
     // MATT
     var mattScores = 5,
         mattResults = 18,
-        mattHome = 18,
+        mattHome = 19,
         mattAway = 11,
         mattGD = 8,
         mattNorm = (3*mattScores) + mattResults,
