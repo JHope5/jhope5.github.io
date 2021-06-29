@@ -55,9 +55,9 @@ $(document).ready(function() {
  
     // MATT
     var mattScores = 5,
-        mattResults = 18,
+        mattResults = 19,
         mattHome = 19,
-        mattAway = 11,
+        mattAway = 12,
         mattGD = 8,
         mattNorm = (3*mattScores) + mattResults,
         mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
