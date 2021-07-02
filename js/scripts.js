@@ -57,17 +57,17 @@ $(document).ready(function() {
     var mattScores = 5,
         mattResults = 19,
         mattHome = 20,
-        mattAway = 12,
+        mattAway = 13,
         mattGD = 8,
         mattNorm = (3*mattScores) + mattResults,
         mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
 
     // PHIL
     var philScores = 4,
-        philResults = 20,
+        philResults = 21,
         philHome = 11,
         philAway = 18,
-        philGD = 6,
+        philGD = 7,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
     
