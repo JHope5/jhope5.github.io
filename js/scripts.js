@@ -42,32 +42,32 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
-    // UPDATED AS OF SWEDEN 1-2 UKRAINE
+    // UPDATED AS OF CZECH 1-2 DENMARK
 
     // JAMIE
     var jamScores = 4,
-        jamResults = 14,
+        jamResults = 15,
         jamHome = 14,
-        jamAway = 16,
+        jamAway = 17,
         jamGD = 6,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
  
     // MATT
     var mattScores = 5,
-        mattResults = 19,
+        mattResults = 20,
         mattHome = 20,
-        mattAway = 13,
+        mattAway = 14,
         mattGD = 8,
         mattNorm = (3*mattScores) + mattResults,
         mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
 
     // PHIL
-    var philScores = 4,
+    var philScores = 5,
         philResults = 21,
-        philHome = 11,
-        philAway = 18,
-        philGD = 7,
+        philHome = 12,
+        philAway = 19,
+        philGD = 8,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
     
