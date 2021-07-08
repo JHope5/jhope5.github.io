@@ -42,21 +42,21 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
-    // UPDATED AS OF UKRAINE 0-4 ENGLAND
+    // UPDATED AS OF ENGLAND - DENMARK
 
     // JAMIE
     var jamScores = 4,
-        jamResults = 16,
+        jamResults = 17,
         jamHome = 15,
         jamAway = 17,
-        jamGD = 6,
+        jamGD = 7,
         jamNorm = (3*jamScores) + jamResults,
         jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
  
     // MATT
     var mattScores = 5,
-        mattResults = 21,
-        mattHome = 21,
+        mattResults = 22,
+        mattHome = 22,
         mattAway = 14,
         mattGD = 8,
         mattNorm = (3*mattScores) + mattResults,
@@ -66,7 +66,7 @@ $(document).ready(function() {
     var philScores = 5,
         philResults = 22,
         philHome = 12,
-        philAway = 19,
+        philAway = 20,
         philGD = 8,
         philNorm = (3*philScores) + philResults,
         philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
