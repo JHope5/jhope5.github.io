@@ -42,39 +42,39 @@
 })(jQuery); // End of use strict
 
 $(document).ready(function() {
-    // UPDATED AS OF ENGLAND - DENMARK
+    // BEGINNING
 
     // JAMIE
-    var jamScores = 4,
-        jamResults = 17,
-        jamHome = 15,
-        jamAway = 17,
-        jamGD = 7,
-        jamNorm = (3*jamScores) + jamResults,
-        jamUEFA = (3*jamScores) + jamResults + jamHome + jamAway + jamGD;
+    var jamScores = 0,
+        jamResults = 0,
+        jamNorm = (3*jamScores) + jamResults;
  
     // MATT
-    var mattScores = 5,
-        mattResults = 22,
-        mattHome = 22,
-        mattAway = 14,
-        mattGD = 8,
-        mattNorm = (3*mattScores) + mattResults,
-        mattUEFA = (3*mattScores) + mattResults + mattHome + mattAway + mattGD;
+    var mattScores = 0,
+        mattResults = 0,
+        mattNorm = (3*mattScores) + mattResults;
 
     // PHIL
-    var philScores = 5,
-        philResults = 22,
-        philHome = 12,
-        philAway = 20,
-        philGD = 8,
-        philNorm = (3*philScores) + philResults,
-        philUEFA = (3*philScores) + philResults + philHome + philAway + philGD;
+    var philScores = 0,
+        philResults = 0,
+        philNorm = (3*philScores) + philResults;
+
+       // HANNAH
+    var hanScores = 0,
+        hanResults = 0,
+        hanNorm = (3*hanScores) + hanResults;
+
+       // SUE
+    var sueScores = 0,
+        sueResults = 0,
+        sueNorm = (3*sueScores) + sueResults;
     
     var normalScores = [
-        {id:1, name:"Jamie", results:jamResults, scores:jamScores, points:jamNorm},
-        {id:2, name:"Matt", results:mattResults, scores:mattScores, points:mattNorm},
-        {id:3, name:"Phil", results:philResults, scores:philScores, points:philNorm},
+      {id:1, name:"Jamie", results:jamResults, scores:jamScores, points:jamNorm},
+      {id:2, name:"Matt", results:mattResults, scores:mattScores, points:mattNorm},
+      {id:3, name:"Phil", results:philResults, scores:philScores, points:philNorm},
+      {id:4, name:"Hannah", results:hannahResults, scores:hannahScores, points:hanNorm},
+      {id:5, name:"Sue", results:sueResults, scores:sueScores, points:suePoints}
     ];
 
     var table = new Tabulator("#normalRules", {
@@ -90,27 +90,4 @@ $(document).ready(function() {
             {column:"points", dir:"desc"},
         ],
    });
-
-   var uefaScores = [
-       {id:1, name:"Jamie", results:jamResults, scores:jamScores, home:jamHome, away:jamAway, diff:jamGD, points:jamUEFA},
-       {id:2, name:"Matt", results:mattResults, scores:mattScores, home:mattHome, away:mattAway, diff:mattGD, points:mattUEFA},
-       {id:3, name:"Phil", results:philResults, scores:philScores, home:philHome, away:philAway, diff:philGD, points:philUEFA},
-    ];
-
-    var uefatable = new Tabulator("#uefaRules", {
-        data:uefaScores, //assign data to table
-        layout: "fitDataTable",
-        columns:[ //Define Table Columns
-            {title:"Name", field:"name", hozAlign:"center"},
-            {title:"Correct Results", field:"results", sorter:"number", hozAlign:"center"},
-            {title:"Correct Scores", field:"scores", sorter:"number", hozAlign:"center"},
-            {title:"Home Goals", field:"home", sorter:"number", hozAlign:"center"},
-            {title:"Away Goals", field:"away", sorter:"number", hozAlign:"center"},
-            {title:"Goal Difference", field:"diff", sorter:"number", hozAlign:"center"},
-            {title:"Total Points", field:"points", sorter:"number", hozAlign:"center"},
-        ],
-        initialSort:[
-            {column:"points", dir:"desc"},
-        ],
-    });
 });
