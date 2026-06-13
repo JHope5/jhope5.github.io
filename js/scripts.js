@@ -73,7 +73,7 @@ $(document).ready(function() {
       {id:1, name:"Jamie", results:jamResults, scores:jamScores, points:jamNorm},
       {id:2, name:"Matt", results:mattResults, scores:mattScores, points:mattNorm},
       {id:3, name:"Phil", results:philResults, scores:philScores, points:philNorm},
-      {id:4, name:"Hannah", results:hannahResults, scores:hannahScores, points:hanNorm},
+      {id:4, name:"Hannah", results:hanResults, scores:hanScores, points:hanNorm},
       {id:5, name:"Sue", results:sueResults, scores:sueScores, points:suePoints}
     ];
 
